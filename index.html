@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luiz Crisanto — Crio sites profissionais para clínicas e consultórios médicos. Domínio próprio, agendamento online e presença no Google para atrair mais pacientes.">
+  <meta name="author" content="Luiz Eduardo Cajueiro Crisanto">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luiz Crisanto — Sites para Clínicas e Consultórios Médicos">
+  <meta property="og:description" content="Sites profissionais para clínicas e consultórios médicos. Domínio próprio, agendamento online e visibilidade no Google para atrair mais pacientes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.devluizcrisanto.com.br/">
+  <meta property="og:image" content="https://www.devluizcrisanto.com.br/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Luiz Crisanto — Sites para Clínicas Médicas">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luiz Crisanto — Sites para Clínicas e Consultórios Médicos">
+  <meta name="twitter:description" content="Sites profissionais para clínicas e consultórios médicos. Domínio próprio, agendamento online e visibilidade no Google para atrair mais pacientes.">
+  <meta name="twitter:image" content="https://www.devluizcrisanto.com.br/assets/images/og-image.jpg">
+
+  <!--
+    Headers de segurança (configurar no servidor / Vercel / Netlify):
+    Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co
+    X-Frame-Options: DENY
+    X-Content-Type-Options: nosniff
+    Referrer-Policy: strict-origin-when-cross-origin
+    Permissions-Policy: camera=(), microphone=(), geolocation=()
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+  -->
+
+  <title>Luiz Crisanto — Sites Profissionais para Clínicas Médicas</title>
+  <link rel="canonical" href="https://www.devluizcrisanto.com.br/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luiz Eduardo Cajueiro Crisanto",
+    "alternateName": "Luiz Crisanto",
+    "url": "https://www.devluizcrisanto.com.br",
+    "image": "https://www.devluizcrisanto.com.br/assets/images/profile.webp",
+    "jobTitle": "Especialista em Sites para Clínicas Médicas",
+    "description": "Crio sites profissionais para clínicas e consultórios médicos. Domínio próprio, agendamento online e presença no Google para atrair mais pacientes.",
+    "knowsAbout": ["Sites para Clínicas", "Presença Digital Médica", "Agendamento Online", "Domínio Próprio", "Google para Médicos"],
+    "sameAs": [
+      "https://www.linkedin.com/in/luizcrisanto/",
+      "https://github.com/luizcrisantoo"
+    ],
+    "email": "mailto:luiz.crisanto@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR",
+      "addressRegion": "PE"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HEADER / NAVEGAÇÃO
+       ════════════════════════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">luizcrisanto<span>.dev</span></a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav__list" id="navList">
+          <li><a href="#projects" class="nav__link">Projetos</a></li>
+          <li><a href="#experience" class="nav__link">Experiência</a></li>
+          <li><a href="#contact" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container hero__content">
+      <img
+        src="assets/images/profile.webp"
+        alt="Foto de Luiz Eduardo Cajueiro Crisanto"
+        class="hero__photo"
+        width="120"
+        height="120"
+      >
+      <div class="hero__badge">Disponível para projetos</div>
+
+      <h1 class="hero__title">
+        Sua clínica visível<br><span>para mais pacientes.</span>
+      </h1>
+
+      <p class="hero__description">
+        Crio <strong>sites profissionais para clínicas e consultórios médicos</strong>.
+        Domínio próprio, agendamento pelo WhatsApp e presença no Google — tudo o que
+        sua clínica precisa para <strong>ser encontrada por novos pacientes</strong>
+        e transmitir credibilidade desde o primeiro clique.
+      </p>
+
+      <a href="#projects" class="hero__cta">
+        Ver projetos
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+        </svg>
+      </a>
+
+      <div class="hero__stack">
+        <span class="hero__stack-tag">Domínio Próprio</span>
+        <span class="hero__stack-tag">Agendamento Online</span>
+        <span class="hero__stack-tag">Encontrado no Google</span>
+        <span class="hero__stack-tag">Funciona em Qualquer Tela</span>
+        <span class="hero__stack-tag">WhatsApp Integrado</span>
+        <span class="hero__stack-tag">Rápido e Seguro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       PROJETOS
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal">Projetos</h2>
+      <p class="section__subtitle reveal">
+        Clínicas que dependiam só do Google e hoje têm site próprio. Arraste para ver a transformação.
+      </p>
+
+      <div class="projects__grid">
+
+        <!-- ── Projeto 1: Clifor ── -->
+        <article class="project-card reveal">
+          <div class="project-card__slider" data-slider>
+            <img
+              src="assets/images/clifor-before.webp"
+              alt="Clifor — versão anterior do sistema"
+              class="project-card__img project-card__img--before"
+              loading="lazy"
+            >
+            <img
+              src="assets/images/clifor-after.webp"
+              alt="Clifor — nova interface redesenhada"
+              class="project-card__img project-card__img--after"
+              loading="lazy"
+            >
+            <span class="project-card__label project-card__label--before">Antes</span>
+            <span class="project-card__label project-card__label--after">Depois</span>
+            <div class="project-card__divider" data-divider></div>
+            <div class="project-card__handle" data-handle>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"/>
+              </svg>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="project-card__range"
+              data-range
+              aria-label="Comparar antes e depois do projeto Clifor"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Site Institucional</span>
+            <h3 class="project-card__title">Clifor</h3>
+            <p class="project-card__desc">
+              Site profissional para clínica de ortopedia e fisioterapia em Olinda.
+              A clínica ganhou presença digital própria, com agendamento via WhatsApp,
+              seção de especialidades e um visual que transmite confiança
+              e credibilidade para os pacientes.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-item">Domínio Próprio</span>
+              <span class="project-card__tech-item">Agendamento via WhatsApp</span>
+              <span class="project-card__tech-item">Encontrado no Google</span>
+              <span class="project-card__tech-item">Funciona no Celular</span>
+            </div>
+            <a href="https://www.cliforolinda.com.br/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              Ver site ao vivo
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Projeto 2: Novo Lar Geriátrico ── -->
+        <article class="project-card reveal">
+          <div class="project-card__slider" data-slider>
+            <img
+              src="assets/images/novolar-before.webp"
+              alt="Novo Lar Geriátrico — sem presença digital"
+              class="project-card__img project-card__img--before"
+              loading="lazy"
+            >
+            <img
+              src="assets/images/novolar-after.webp"
+              alt="Novo Lar Geriátrico — site institucional novo"
+              class="project-card__img project-card__img--after"
+              loading="lazy"
+            >
+            <span class="project-card__label project-card__label--before">Antes</span>
+            <span class="project-card__label project-card__label--after">Depois</span>
+            <div class="project-card__divider" data-divider></div>
+            <div class="project-card__handle" data-handle>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"/>
+              </svg>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="project-card__range"
+              data-range
+              aria-label="Comparar antes e depois do projeto Novo Lar"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Site Institucional</span>
+            <h3 class="project-card__title">Novo Lar Geriátrico</h3>
+            <p class="project-card__desc">
+              Instituição de cuidados que não tinha nenhuma presença na internet.
+              Criei um site com domínio próprio e visibilidade no Google, gerando
+              as primeiras consultas de novos familiares em menos de 30 dias.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-item">Domínio Próprio</span>
+              <span class="project-card__tech-item">Encontrado no Google</span>
+              <span class="project-card__tech-item">Funciona no Celular</span>
+              <span class="project-card__tech-item">Consultas em 30 Dias</span>
+            </div>
+            <a href="https://novolargeriatrico.com.br/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              Ver site ao vivo
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Projeto 3: Clínica Ortopédica do Recife ── -->
+        <article class="project-card reveal">
+          <div class="project-card__slider" data-slider>
+            <img
+              src="assets/images/ortopedica-before.webp"
+              alt="Clínica Ortopédica do Recife — apenas Google Business"
+              class="project-card__img project-card__img--before"
+              loading="lazy"
+            >
+            <img
+              src="assets/images/ortopedica-after.webp"
+              alt="Clínica Ortopédica do Recife — site profissional"
+              class="project-card__img project-card__img--after"
+              loading="lazy"
+            >
+            <span class="project-card__label project-card__label--before">Antes</span>
+            <span class="project-card__label project-card__label--after">Depois</span>
+            <div class="project-card__divider" data-divider></div>
+            <div class="project-card__handle" data-handle>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"/>
+              </svg>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="project-card__range"
+              data-range
+              aria-label="Comparar antes e depois da Clínica Ortopédica do Recife"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Site Institucional</span>
+            <h3 class="project-card__title">Clínica Ortopédica do Recife</h3>
+            <p class="project-card__desc">
+              A clínica dependia exclusivamente do Google para ser encontrada.
+              Criei um site profissional com domínio próprio e foco em
+              agendamento — agora os pacientes encontram a clínica, conhecem
+              os serviços e agendam pelo WhatsApp.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-item">Domínio Próprio</span>
+              <span class="project-card__tech-item">Agendamento Online</span>
+              <span class="project-card__tech-item">Encontrado no Google</span>
+              <span class="project-card__tech-item">Funciona no Celular</span>
+            </div>
+            <a href="https://www.clinicaortopedicadorecife.com.br/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              Ver site ao vivo
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Projeto 4: Angiocenter ── -->
+        <article class="project-card reveal">
+          <div class="project-card__slider" data-slider>
+            <img
+              src="assets/images/drmarco-before.webp"
+              alt="Angiocenter — apenas Google Business"
+              class="project-card__img project-card__img--before"
+              loading="lazy"
+            >
+            <img
+              src="assets/images/drmarco-after.webp"
+              alt="Angiocenter — site profissional"
+              class="project-card__img project-card__img--after"
+              loading="lazy"
+            >
+            <span class="project-card__label project-card__label--before">Antes</span>
+            <span class="project-card__label project-card__label--after">Depois</span>
+            <div class="project-card__divider" data-divider></div>
+            <div class="project-card__handle" data-handle>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"/>
+              </svg>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="project-card__range"
+              data-range
+              aria-label="Comparar antes e depois do site Angiocenter"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Site Institucional</span>
+            <h3 class="project-card__title">Angiocenter</h3>
+            <p class="project-card__desc">
+              Clínica de angiologia e cirurgia vascular em Teresina que dependia
+              exclusivamente do Google e Doctoralia. Criei um site profissional
+              com foco em agendamento de consultas e credibilidade — agora a
+              clínica tem sua própria presença digital.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-item">Agendamento de Consultas</span>
+              <span class="project-card__tech-item">Encontrado no Google</span>
+              <span class="project-card__tech-item">Funciona no Celular</span>
+              <span class="project-card__tech-item">Credibilidade Médica</span>
+            </div>
+            <a href="https://luizcrisantoo.github.io/site-dr-marco/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              Ver site ao vivo
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       EXPERIÊNCIA
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section__title reveal">Experiência</h2>
+      <p class="section__subtitle reveal">
+        Minha trajetória profissional, do ambiente corporativo à criação de sites para clínicas.
+      </p>
+
+      <div class="experience__timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-item__dot"></div>
+          <span class="timeline-item__period">2025 — Presente</span>
+          <h3 class="timeline-item__role">Estagiário em Tecnologia</h3>
+          <p class="timeline-item__company">ALEPE — Assembleia Legislativa de Pernambuco</p>
+          <p class="timeline-item__desc">
+            Criação e manutenção de sistemas internos em ambiente corporativo real.
+            Experiência com resolução de problemas, organização de projetos e
+            entregas dentro de prazos — habilidades que aplico diretamente
+            na construção de sites para clínicas.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-item__dot"></div>
+          <span class="timeline-item__period">2024 — Presente</span>
+          <h3 class="timeline-item__role">Especialista em Sites para Clínicas</h3>
+          <p class="timeline-item__company">Projetos Próprios — Sites Institucionais</p>
+          <p class="timeline-item__desc">
+            Criação de sites profissionais para clínicas médicas, consultórios e
+            instituições de saúde. Do planejamento à entrega final, incluindo
+            domínio próprio, visibilidade no Google e agendamento online.
+            4 projetos entregues e funcionando.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-item__dot"></div>
+          <span class="timeline-item__period">Em andamento</span>
+          <h3 class="timeline-item__role">Ciência da Computação</h3>
+          <p class="timeline-item__company">Graduação + Formação Complementar — Alura</p>
+          <p class="timeline-item__desc">
+            Formação sólida em tecnologia, com foco em construir sistemas seguros,
+            rápidos e confiáveis. Tudo o que aprendo na faculdade aplico
+            diretamente nos sites que entrego para meus clientes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       CTA — CHAMADA PARA AÇÃO
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="cta" id="cta">
+    <div class="container cta__content reveal">
+      <h2 class="cta__title">Sua clínica ainda depende só do Google?</h2>
+      <p class="cta__desc">
+        Crio sites profissionais para clínicas e consultórios médicos — com domínio próprio,
+        agendamento via WhatsApp e visibilidade no Google para seus pacientes encontrarem você.
+        Já ajudei clínicas a saírem do zero digital para receberem novas consultas em menos de 30 dias.
+      </p>
+      <div class="cta__actions">
+        <a href="https://wa.me/5581998080009" class="cta__btn cta__btn--whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Chamar no WhatsApp
+        </a>
+        <a href="mailto:luiz.crisanto@gmail.com" class="cta__btn cta__btn--email">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+          </svg>
+          Enviar e-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       CONTATO
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title reveal">Contato</h2>
+      <p class="section__subtitle reveal">
+        Tem um projeto em mente? Vamos conversar.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__item-label">E-mail</p>
+              <p class="contact__item-value">luiz.crisanto@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__item-label">Localização</p>
+              <p class="contact__item-value">Brasil</p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__item-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/luizcrisanto/" class="contact__item-value" target="_blank" rel="noopener noreferrer">linkedin.com/in/luizcrisanto</a>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__item-label">GitHub</p>
+              <a href="https://github.com/luizcrisantoo" class="contact__item-value" target="_blank" rel="noopener noreferrer">github.com/luizcrisantoo</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="contact-name" class="sr-only">Seu nome</label>
+          <input type="text" class="contact__input" id="contact-name" name="name" placeholder="Seu nome" required autocomplete="name">
+          <label for="contact-email" class="sr-only">Seu e-mail</label>
+          <input type="email" class="contact__input" id="contact-email" name="email" placeholder="Seu e-mail" required autocomplete="email">
+          <label for="contact-message" class="sr-only">Sua mensagem</label>
+          <textarea class="contact__textarea" id="contact-message" name="message" placeholder="Sua mensagem..." required></textarea>
+          <button type="submit" class="contact__submit" id="contactSubmit">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Desenvolvido por <a href="#hero">Luiz Crisanto</a> &mdash; 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal de confirmação -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="40" height="40" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+        </svg>
+      </div>
+      <h3 class="modal__title" id="modal-title">Mensagem enviada!</h3>
+      <p class="modal__desc">Obrigado pelo contato. Responderei o mais breve possível.</p>
+      <button class="modal__btn" data-modal-close>Fechar</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/modules/menu.js" defer></script>
+  <script src="js/modules/scroll.js" defer></script>
+  <script src="js/modules/slider.js" defer></script>
+  <script src="js/modules/contact.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
