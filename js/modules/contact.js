@@ -27,9 +27,14 @@ const ContactModule = (function () {
       // Honeypot preenchido = bot
       if (formData.get('_honey')) return;
 
-      // Adicionar configurações do Formsubmit
-      formData.append('_subject', 'Nova mensagem do portfólio');
-      formData.append('_captcha', 'false');
+      // Montar objeto JSON
+      var data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message'),
+        _subject: 'Nova mensagem do portfólio',
+        _captcha: 'false'
+      };
 
       // Desabilitar botão durante envio
       submitBtn.disabled = true;
@@ -37,13 +42,19 @@ const ContactModule = (function () {
 
       fetch(FORMSUBMIT_URL, {
         method: 'POST',
-        body: formData,
+        body: JSON.stringify(data),
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
       })
       .then(function (response) {
-        if (response.ok) {
+        return response.json().then(function (json) {
+          return { status: response.status, body: json };
+        });
+      })
+      .then(function (result) {
+        if (result.body.success || result.status === 200) {
           form.reset();
           openModal(modal);
         } else {
