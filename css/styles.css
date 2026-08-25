@@ -611,9 +611,9 @@ h1, h2, h3, h4 {
   color: #fff;
 }
 
-/* Card oculto pelo filtro */
+/* Card oculto pelo filtro — !important garante prioridade sobre media queries */
 .project-card--hidden {
-  display: none;
+  display: none !important;
 }
 
 /* Animação ao aparecer */
