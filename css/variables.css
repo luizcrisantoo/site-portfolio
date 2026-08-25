@@ -11,9 +11,9 @@
   --color-border:       #2a2a3e;
 
   /* ── Accent ── */
-  --color-accent:       #6366f1;
-  --color-accent-light: #818cf8;
-  --color-accent-glow:  rgba(99, 102, 241, 0.15);
+  --color-accent:       #10b981;
+  --color-accent-light: #34d399;
+  --color-accent-glow:  rgba(16, 185, 129, 0.15);
 
   /* ── Texto ── */
   --color-text:         #e2e8f0;
@@ -26,9 +26,9 @@
   --color-label-after:  #22c55e;
 
   /* ── Tipografia ── */
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-body:    'Satoshi', system-ui, -apple-system, sans-serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
-  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Satoshi', system-ui, sans-serif;
 
   /* ── Tamanhos de fonte (escala modular) ── */
   --text-xs:   0.75rem;
