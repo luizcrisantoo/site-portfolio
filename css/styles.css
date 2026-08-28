@@ -680,6 +680,90 @@ h1, h2, h3, h4 {
 .project-card__preview--confeitaria { background: linear-gradient(135deg, #4A2F22, #6B4330); }
 .project-card__preview--app        { background: linear-gradient(135deg, #1a1a2e, #0d0d0d); }
 
+/* ── 5d. SHOWCASE GALLERY (marquee 3D) ───────────────────────────────────── */
+
+.showcase {
+  padding: var(--space-2xl) 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.showcase__track {
+  display: flex;
+  gap: var(--space-lg);
+  width: max-content;
+  animation: showcase-scroll 40s linear infinite;
+}
+
+.showcase__img {
+  flex: 0 0 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.showcase__img:hover {
+  transform: scale(1.05) translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+@keyframes showcase-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── 5e. STATS (contadores) ─────────────────────────────────────────────── */
+
+.stats {
+  padding: var(--space-xl) 0 var(--space-2xl);
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.stats__item {
+  padding: var(--space-lg) var(--space-md);
+}
+
+.stats__number-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: var(--space-xs);
+}
+
+.stats__number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.stats__prefix,
+.stats__suffix {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.stats__label {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
 /* ── 6. EXPERIÊNCIA (TIMELINE) ────────────────────────────────────────────── */
 
 .experience__timeline {
@@ -1147,6 +1231,15 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
   }
+
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .showcase__img {
+    flex: 0 0 380px;
+    height: 240px;
+  }
 }
 
 /* ── Desktop (a partir de 1024px) ── */
@@ -1173,5 +1266,19 @@ h1, h2, h3, h4 {
   .hero__title {
     font-size: var(--text-4xl);
     letter-spacing: -1px;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .stats__number {
+    font-size: 3.5rem;
+  }
+
+  .showcase__img {
+    flex: 0 0 420px;
+    height: 260px;
   }
 }
